@@ -73,6 +73,11 @@ const Formulario = ({guardarBusquedaLetra}) => {
                                 type="submit"
                                 className="btn btn-primary float-right"
                             >Buscar</button>
+
+                            <p>La aplicacion en ocasiones funciona un poco lenta, esto es debido a las APIS, que unas son un poco mas optimas que otras, ya que esto
+                                es un proyecto demostrativo de consumir dos APIS, es con fines de demostrar el conocimiento obtenido, por lo que algunas veces, no encuentra
+                                el artista o la cancion indicada , te recomendamos escribir bandas comerciales y letras mas famosas, gracias !
+                            </p>
                         </fieldset>
                     </form>
                 </div>

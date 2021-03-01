@@ -1,6 +1,7 @@
 import {Fragment,useState,useEffect} from 'react';
 import Formulario from './components/Formulario';
 import Cancion from './components/Cancion';
+import Info from './components/Info';
 import axios from 'axios';
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
     }
     consultarApiLetra();
 
-  }, [busquedaletra])
+  }, [busquedaletra,info])
 
   return (
     <Fragment>
@@ -42,7 +43,9 @@ function App() {
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">
-
+              <Info
+                info = {info}
+              />
           </div>
           <div className="col-md-6">
               <Cancion
